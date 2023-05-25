@@ -12,7 +12,8 @@ namespace Mamonov_IKM_721A_cource_project
         // Поля
         private string Data; //вхідні дані
         private string Result; // Поле результату
-                               // Методи
+        private System.DateTime TimeBegin; // час початку роботи програми
+                                           // Методи
         public void Write(string D)// метод запису даних в об'єкт.
         {
             this.Data = D;
@@ -20,6 +21,14 @@ namespace Mamonov_IKM_721A_cource_project
         public string Read()
         {
             return this.Result;// метод відображення результату
+        }
+        public void SetTime() // метод запису часу початку роботи програми
+        {
+            this.TimeBegin = System.DateTime.Now;
+        }
+        public System.DateTime GetTime() // Метод отримання часу завершення програми
+        {
+            return this.TimeBegin;
         }
         public void Task() // метод реалізації програмного завдання
         {
