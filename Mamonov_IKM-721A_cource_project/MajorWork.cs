@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Windows.Forms;
 
 namespace Mamonov_IKM_721A_cource_project
 {
@@ -15,7 +18,9 @@ namespace Mamonov_IKM_721A_cource_project
         private System.DateTime TimeBegin; // час початку роботи програми
         private string SaveFileName;// ім’я файлу для запису
         private string OpenFileName;// ім’я файлу для читання
-                                    // Методи
+        public bool Modify;
+        private int Key;// поле ключа
+        // Методи
         public void WriteSaveFileName(string S)// метод запису даних в об'єкт
         {
             this.SaveFileName = S;// запам'ятати ім’я файлу для запису
@@ -40,6 +45,33 @@ namespace Mamonov_IKM_721A_cource_project
         {
             return this.TimeBegin;
         }
+        public void SaveToFile() // Запис даних до файлу
+        {
+            if (!this.Modify)
+                return;
+            try
+            {
+                Stream S; // створення потоку
+                if (File.Exists(this.SaveFileName))// існує файл?
+                    S = File.Open(this.SaveFileName, FileMode.Append);// Відкриття файлу для збереження
+                else
+                    S = File.Open(this.SaveFileName, FileMode.Create);// створити файл
+                Buffer D = new Buffer(); // створення буферної змінної
+                D.Data = this.Data;
+                D.Result = Convert.ToString(this.Result);
+                D.Key = Key;
+                BinaryFormatter BF = new BinaryFormatter(); // створення об'єкта для форматування
+                BF.Serialize(S, D);
+                S.Flush(); // очищення буфера потоку
+                S.Close(); // закриття потоку
+                this.Modify = false; // Заборона повторного запису
+            }
+            catch
+            {
+
+                MessageBox.Show("Помилка роботи з файлом"); // Виведення на екран повідомлення "Помилка   роботи з файлом"
+            }
+        }
         public void Task() // метод реалізації програмного завдання
         {
             if (this.Data.Length > 5)
@@ -51,6 +83,7 @@ namespace Mamonov_IKM_721A_cource_project
             {
                 this.Result = Convert.ToString(false);
             }
+            this.Modify = true; // Дозвіл запису
         }
     }
 }
