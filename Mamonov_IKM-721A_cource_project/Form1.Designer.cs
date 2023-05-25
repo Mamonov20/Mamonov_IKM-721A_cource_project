@@ -140,6 +140,7 @@
             this.новийToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.новийToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.новийToolStripMenuItem.Text = "Новий";
+            this.новийToolStripMenuItem.Click += new System.EventHandler(this.новийToolStripMenuItem_Click);
             // 
             // відкритиToolStripMenuItem
             // 
@@ -155,6 +156,7 @@
             this.зберегтиToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.зберегтиToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.зберегтиToolStripMenuItem.Text = "Зберегти";
+            this.зберегтиToolStripMenuItem.Click += new System.EventHandler(this.зберегтиToolStripMenuItem_Click);
             // 
             // зберегтиЯкToolStripMenuItem
             // 
@@ -216,6 +218,11 @@
             // ofdOpen
             // 
             this.ofdOpen.FileName = "openFileDialog1";
+            this.ofdOpen.Filter = "|*.SoM|All files|*.*";
+            // 
+            // sfdSave
+            // 
+            this.sfdSave.Filter = "|*.SoM|All files|*.*";
             // 
             // Form1
             // 
@@ -229,6 +236,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
