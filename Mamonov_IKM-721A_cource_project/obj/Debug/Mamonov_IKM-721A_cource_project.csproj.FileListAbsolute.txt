@@ -1,0 +1,11 @@
+\\Mac\Home\Desktop\mamonov\Mamonov_IKM-721A_cource_project\bin\Debug\Mamonov_IKM-721A_cource_project.exe.config
+\\Mac\Home\Desktop\mamonov\Mamonov_IKM-721A_cource_project\bin\Debug\Mamonov_IKM-721A_cource_project.exe
+\\Mac\Home\Desktop\mamonov\Mamonov_IKM-721A_cource_project\bin\Debug\Mamonov_IKM-721A_cource_project.pdb
+\\Mac\Home\Desktop\mamonov\Mamonov_IKM-721A_cource_project\obj\Debug\Mamonov_IKM-721A_cource_project.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\mamonov\Mamonov_IKM-721A_cource_project\obj\Debug\Mamonov_IKM-721A_cource_project.csproj.SuggestedBindingRedirects.cache
+\\Mac\Home\Desktop\mamonov\Mamonov_IKM-721A_cource_project\obj\Debug\Mamonov_IKM_721A_cource_project.Form1.resources
+\\Mac\Home\Desktop\mamonov\Mamonov_IKM-721A_cource_project\obj\Debug\Mamonov_IKM_721A_cource_project.Properties.Resources.resources
+\\Mac\Home\Desktop\mamonov\Mamonov_IKM-721A_cource_project\obj\Debug\Mamonov_IKM-721A_cource_project.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\mamonov\Mamonov_IKM-721A_cource_project\obj\Debug\Mamonov_IKM-721A_cource_project.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\mamonov\Mamonov_IKM-721A_cource_project\obj\Debug\Mamonov_IKM-721A_cource_project.exe
+\\Mac\Home\Desktop\mamonov\Mamonov_IKM-721A_cource_project\obj\Debug\Mamonov_IKM-721A_cource_project.pdb
