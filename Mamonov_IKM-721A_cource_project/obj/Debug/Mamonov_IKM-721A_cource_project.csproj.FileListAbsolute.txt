@@ -9,3 +9,4 @@
 \\Mac\Home\Desktop\mamonov\Mamonov_IKM-721A_cource_project\obj\Debug\Mamonov_IKM-721A_cource_project.csproj.CoreCompileInputs.cache
 \\Mac\Home\Desktop\mamonov\Mamonov_IKM-721A_cource_project\obj\Debug\Mamonov_IKM-721A_cource_project.exe
 \\Mac\Home\Desktop\mamonov\Mamonov_IKM-721A_cource_project\obj\Debug\Mamonov_IKM-721A_cource_project.pdb
+\\Mac\Home\Desktop\mamonov\Mamonov_IKM-721A_cource_project\obj\Debug\Mamonov_IKM_721A_cource_project.About.resources
